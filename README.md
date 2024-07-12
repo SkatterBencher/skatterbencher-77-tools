@@ -1,8 +1,15 @@
 # skatterbencher-77-tools
 Tools and scripts used for SkatterBencher #77 - Raspberry Pi 5
 
+- fw_vlimit: python script to override the firmware voltage limit of 1V
 - oc_settings: text files with the oc parameters for each OC strategy
 - slowcpu-service: files for strategy #3 to slow down the CPU before entering OS
+
+Firmware Voltage Limit:
+- firmware limits DVF voltage to 1V
+- script locates firmware function that defines the limit & overrides to 1.2V
+- then flush videocore cache to apply the new voltage limit
+- voltage still limited by PMIC to 1.1V
 
 OC Settings:
 - oc_all: list of all overclocking parameters mentioned in SkatterBencher #77
