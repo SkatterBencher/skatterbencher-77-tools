@@ -1,0 +1,12 @@
+[Unit]
+Description=Boot at low CPU MHz
+Before=basic.target
+After=local-fs.target sysinit.target
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /bin/slowcpu
+
+[Install]
+WantedBy=basic.target
