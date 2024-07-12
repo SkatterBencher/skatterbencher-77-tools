@@ -11,6 +11,11 @@ Firmware Voltage Limit:
 - then flush videocore cache to apply the new voltage limit
 - voltage still limited by PMIC to 1.1V
 
+noppi:
+- measures number of NOPs per 100ms and translates in to effective clock frequency (ref: ElmorLabs NopBench https://skatterbencher.com/nopbench/)
+- noppi_mhz.c: source code; compile with "gcc -o noppi_mhz noppi_mhz.c -pthread"
+- noppi_mhz: compiled binary
+
 OC Settings:
 - oc_all: list of all overclocking parameters mentioned in SkatterBencher #77
 - strategy #1: arm_freq=2900, over_voltage_delta=250000
