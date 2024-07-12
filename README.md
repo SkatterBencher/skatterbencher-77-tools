@@ -18,6 +18,12 @@ OC Settings:
 - strategy #3: arm_freq=3000, gpu_freq=1100, v3d_freq=1200, over_voltage_delta=250000
 - evc2: over_voltage=8
 
+rpi5-monlog:
+- telemetry script to capture and log relevant vcgencmd telemetry.
+- further development: https://github.com/SkatterBencher/rpi5-telemetry-python
+- rpi5_telemetry_monlog.py: base script which updates every second
+- rpi5_telemetry_monlog_fast.py: removed cpu usage telemetry and sleep; much faster updating
+
 Slow CPU:
 - slowcpu in /bin/
 - slowcpu.service in /lib/systemd/system/
