@@ -1,0 +1,5 @@
+## frequency ##
+arm_freq=2900
+
+## voltage ##
+over_voltage_delta=250000

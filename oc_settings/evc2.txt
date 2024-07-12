@@ -1,0 +1,3 @@
+## voltage ##
+arm_freq=2900
+over_voltage=8

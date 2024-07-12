@@ -1,0 +1,7 @@
+## frequency ##
+arm_freq=2900
+gpu_freq=1100
+v3d_freq=960
+
+## voltage ##
+over_voltage_delta=250000
