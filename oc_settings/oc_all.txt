@@ -1,0 +1,24 @@
+### Frequency Configuration ###
+arm_freq=
+arm_freq_min=
+gpu_freq=
+gpu_freq_min=
+core_freq=
+core_freq_min=
+isp_freq=
+isp_freq_min=
+hevc_freq=
+hevc_freq_min=
+v3d_freq=
+v3d_freq_min=
+
+### Voltage Configuration ###
+over_voltage=
+over_voltage_delta=
+
+### Temperature Configuration ###
+temp_limit=
+
+### Performance Configuration ###
+force_turbo=1
+initial_turbo=0
