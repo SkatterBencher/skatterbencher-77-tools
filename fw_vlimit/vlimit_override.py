@@ -4,8 +4,8 @@ import subprocess
 
 # Define the addresses and instructions
 ADDRESS = 0x3fc491e8
-OLD_INSTRUCTION = b'\x00\xb0\xe8\x03'  # mov r0, 0x3e8 in little-endian ARM encoding
-NEW_INSTRUCTION = b'\x00\xb0\xb0\x04'  # mov r0, 0x4b0 in little-endian ARM encoding
+OLD_INSTRUCTION = b'\x00\xb0\xe8\x03'  # mov r0, 0x3e8 (1000) in little-endian Videocore encoding
+NEW_INSTRUCTION = b'\x00\xb0\xb0\x04'  # mov r0, 0x4b0 (1200) in little-endian Videocore encoding
 
 pagesize = mmap.PAGESIZE  # Adjust as needed
 
